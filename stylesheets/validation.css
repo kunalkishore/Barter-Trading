@@ -1,0 +1,49 @@
+#header {
+	background-color:black;
+    color:white;
+    padding:5px;
+    text-align:right;
+}
+
+#name {
+	background-color:#F0FFFF;
+	text-align:center;
+	padding:2px;
+}
+
+.h1 {
+    font-size: 250%;
+}
+
+
+.image_holder{
+    float:left;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
+
+#footer {
+    width: 100%;
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:1px; 
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+.para {
+    line-height: 30px;
+    width:50%;
+    height: 200px;
+    background-color: black;
+    color:white;
+    padding: 5px;
+    text-align: left;
+    position:absolute;
+    left:50px;
+    top:150px;
+}

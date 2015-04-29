@@ -1,0 +1,108 @@
+application: dulcet-radar-91118
+version: 1
+runtime: php
+api_version: 1
+
+handlers:
+- url: /
+  script: home.php
+
+- url: /home.php
+  script: home.php
+
+- url: /index\.html
+  script: home.php
+
+- url: /images
+  static_dir: images
+
+- url: /trade.jpg
+  static_files: trade.jpg
+  upload: trade.jpg
+
+- url: /about.php
+  script: about.php
+
+- url: /add.php
+  script: add.php
+
+- url: /add_book.php
+  script: add_book.php
+
+- url: /add_gadget.php
+  script: add_gadget.php
+
+- url: /add_instrument.php
+  script: add_instrument.php
+
+- url: /books_details.php
+  script: books_details.php
+
+- url: /forgot_password.php
+  script: forgot_password.php 
+
+- url: /gadgets_details.php
+  script: gadgets_details.php
+
+- url: /change_password.php
+  script: change_password.php 
+
+- url: /config.php
+  script: config.php
+
+- url: /instruments_details.php
+  script: instruments_details.php
+
+- url: /login_home.php
+  script: login_home.php
+
+- url: /login_inventory.php
+  script: login_inventory.php
+
+- url: /login_pending.php
+  script: login_pending.php
+
+- url: /logout.php
+  script: logout.php
+
+- url: /result_books.php
+  script: result_books.php
+
+- url: /result_gadgets.php
+  script: result_gadgets.php
+
+- url: /result_instruments.php
+  script: result_instruments.php
+
+- url: /search_books.php
+  script: search_books.php
+
+- url: /search_gadgets.php
+  script: search_gadgets.php
+
+- url: /search_instruments.php
+  script: search_instruments.php
+
+- url: /send_mail.php
+  script: send_mail.php
+
+- url: /sign_up.php
+  script: sign_up.php
+
+- url: /start.php
+  script: start.php
+
+- url: /validation.php
+  script: validation.php
+
+- url: /verify.php
+  script: verify.php
+
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /book_details.php?(.*?)&(.*?)
+  script : book_details.php
+
+- url: /(.+)?/?
+  script: home.php
